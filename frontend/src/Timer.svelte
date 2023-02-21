@@ -53,6 +53,10 @@
             counting = true;
         }
     }
+
+    function resetTimer() {
+        window.location.reload();
+    }
 </script>
 
 <div>
@@ -67,7 +71,7 @@
             </div>
             <button bind:this="{playButton}" on:click={countDown} class="play-btn mt-2" id="play">{counting ? "Pause" : "Go!"}</button>
             <div>
-            <button class="res-btn mt-2">Reset</button>
+            <button class="res-btn mt-2" on:click={resetTimer}>Reset</button>
             </div>
             <hr>
             <div class="d-flex justify-content-center">

@@ -37,7 +37,7 @@ public class MainController : ControllerBase
         return user;
     }
 
-    [HttpPost(template:"user/create")]
+    [HttpPost(template:"users/create")]
     public async Task<ActionResult<User>> CreateUser([FromBody]User user)
     {
         if (ModelState.IsValid)

@@ -4,11 +4,13 @@
   import About from "./routes/About.svelte";
   import Hello from "./routes/Hello.svelte";
   import Navbar from "./Nav.svelte";
+  import SignUp from "./routes/SignUp.svelte";
   import NotFound from "./routes/NotFound.svelte";
   let routes = {
     "/": Home,
     "/about": About,
     "/hello" : Hello,
+    "/signup" : SignUp,
 
     "*" : NotFound
   }
