@@ -25,5 +25,5 @@ public class User
     public DateTime CreatedAt{ get; set; }
     public DateTime UpdateAt{ get; set; }
 
-    public List<Timer> AllTimers { get; set; }
+    public List<Timer> AllTimers { get; set; } = new List<Timer>();
 }
